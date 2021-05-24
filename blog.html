@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+      .text-hexschool {
+        color: #00cc99  !important
+      }
+    </style>
+    <title>HEX-blog版型練習</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00cc99;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="far fa-gem"></i>
+            六角部落格
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-hexschool" style="text-decoration:none">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-hexschool" style="text-decoration:none">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+        <h1 class="text-hexschool">Bootstrap4 繁體中文手冊</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="my-2 text-secondary">
+              <small>
+                <span><i class="far fa-user"></i>Leah</span>
+                <span class="mx-3"><i class="far fa-calendar-alt"></i>2021/05/23</span>
+                <span><i class="fas fa-tag"></i>event</span>
+              </small>
+            </div>
+            <article>
+              <p>Bootstrap是目前最主流的css框架，由於包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易的，也有越來越多開發者協同一起開發（Github上有超過10萬個star），如今第四版Beta（bootstrap 4 Beta）也在2017/8/10釋出，我們先來看看他有什麼改變吧！</p>
+              <h2 class="text-hexschool">Bootstrap4的特色</h2>
+              <p>Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha 的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：</p>
+              <ul>
+                <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass 囉！</li>
+                <li>Flexbox 以及強化的網格系統: 網格系統不在使用<code>float</code>，進而改用 flexbox ，讓行動裝置及桌面裝置有更彈性的排版方法。</li>
+                <li>卡片元件: 許多元件本質相似度較高，如 wells、thumbnails、panels 等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li>
+              </ul>
+              <h2>繁體中文手冊</h2>
+              <p>加入了這麼多新功能，如果從頭開始了解原文版本也需要花上不少時間，於是六角學院從兩個月前開始著手翻譯，在正式釋出 Beta 版後的兩個工作日釋出繁體中文手冊，讓對於 Bootstrap 有需求的同學可以加速上手～</p>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2" alt="">
+            </article>
+            <div class="card">
+              <div class="card-header">
+                留言回覆
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-2 flex-fill">
+                    <img class="m-3" src="https://randomuser.me/api/portraits/women/90.jpg" alt="">
+                  </div>
+                  <div class="col-lg-8 flex-fill">
+                    <div class="m-3">
+                      <h5>user name</h5>
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                      </div>
+                      <div class="d-grid my-3">
+                        <button class="btn btn-light">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-2 flex-fill">
+                    <img class="m-3" src="https://randomuser.me/api/portraits/women/67.jpg" alt="">
+                  </div>
+                  <div class="col-lg-8 flex-fill">
+                    <div class="m-3">
+                      <h5>media heading</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, magnam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-2 flex-fill">
+                    <img class="m-3" src="https://randomuser.me/api/portraits/men/15.jpg" alt="">
+                  </div>
+                  <div class="col-lg-8 flex-fill">
+                    <div class="m-3">
+                      <h5>media heading</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, magnam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-secondary">Tags</h2>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark me-2"><i class="fas fa-tag"></i>Info</span></a>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark me-2"><i class="fas fa-tag"></i>apple</span></a>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark me-2"><i class="fas fa-tag"></i>book</span></a>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark me-2"><i class="fas fa-tag"></i>cat</span></a>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark"><i class="fas fa-tag"></i>dog</span></a>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-light py-4 mt-4 container-fluid d-flex justify-content-between">
+        <div class="ms-5"><p>Leah's blog <i class="far fa-copyright"></i>2021</p></div>
+        <div>
+          <i class="fab fa-facebook-square me-2"></i>
+          <i class="fab fa-instagram me-2"></i>
+          <i class="fas fa-podcast me-5"></i>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
